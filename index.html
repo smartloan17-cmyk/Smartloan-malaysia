@@ -1,33 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SmartLoan Malaysia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f5f7fb;
+      color:#222;
+    }
+    .header{
+      background:linear-gradient(135deg,#0d47a1,#1976d2);
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+    .header h1{
+      margin:0;
+      font-size:32px;
+    }
+    .header p{
+      margin-top:10px;
+      font-size:18px;
+    }
+    .container{
+      max-width:900px;
+      margin:20px auto;
+      padding:20px;
+    }
+    .card{
+      background:white;
+      border-radius:14px;
+      padding:24px;
+      margin-bottom:20px;
+      box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    }
+    h2{
+      margin-top:0;
+    }
+    input, textarea, select{
+      width:100%;
+      padding:12px;
+      margin-top:8px;
+      margin-bottom:14px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:15px;
+      box-sizing:border-box;
+    }
+    .btn{
+      display:inline-block;
+      background:#1976d2;
+      color:white;
+      padding:12px 20px;
+      border:none;
+      border-radius:8px;
+      text-decoration:none;
+      cursor:pointer;
+      font-size:15px;
+    }
+    .btn-whatsapp{
+      background:#25D366;
+    }
+    ul{
+      padding-left:20px;
+    }
+    .footer{
+      text-align:center;
+      color:#777;
+      padding:30px 10px;
+      font-size:14px;
+    }
+  </style>
 </head>
-<body style="font-family:Arial;text-align:center;padding:30px;">
-  <h1>SmartLoan Malaysia</h1>
-  <p>Fast Loan Approval in Malaysia</p>
+<body>
 
-  <form>
-    Name<br>
-    <input type="text"><br><br>
+  <div class="header">
+    <h1>SmartLoan Malaysia</h1>
+    <p>Fast Loan Approval • Easy Process • Trusted Service</p>
+  </div>
 
-    Phone Number<br>
-    <input type="text"><br><br>
+  <div class="container">
 
-    Loan Amount (RM)<br>
-    <input type="text"><br><br>
+    <div class="card">
+      <h2>Apply Loan Now</h2>
+      <p>Please fill in your details below. Our officer will contact you as soon as possible.</p>
 
-    <button type="submit">Apply Now</button>
-  </form>
+      <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
 
-  <p style="margin-top:30px;"><b>Required Documents</b></p>
-  <ul style="list-style:none;padding:0;">
-    <li>IC</li>
-    <li>Payslips (3 months)</li>
-    <li>Bank Statement (3 months)</li>
-    <li>EPF Statement</li>
-    <li>Electric / Water Bill</li>
-  </ul>
+        <label>IC Number</label>
+        <input type="text" placeholder="Enter your IC number">
+
+        <label>Phone Number</label>
+        <input type="text" placeholder="Enter your phone number">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Loan Amount (RM)</label>
+        <input type="text" placeholder="Example: 20000">
+
+        <label>Monthly Salary (RM)</label>
+        <input type="text" placeholder="Example: 3500">
+
+        <label>Employment Type</label>
+        <select>
+          <option>Private Sector</option>
+          <option>Government</option>
+          <option>Self Employed</option>
+          <option>Business Owner</option>
+        </select>
+
+        <label>Message</label>
+        <textarea rows="4" placeholder="Additional information"></textarea>
+
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Required Documents</h2>
+      <ul>
+        <li>IC</li>
+        <li>Payslips 3 month</li>
+        <li>Bank statement 3 month</li>
+        <li>EPF statement</li>
+        <li>Bill api / air</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>WhatsApp: 011-61337915</p>
+      <p>Email: smartloan17@gmail.com</p>
+      <a class="btn btn-whatsapp" href="https://wa.me/601161337915" target="_blank">WhatsApp Now</a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 SmartLoan Malaysia. All Rights Reserved.
+  </div>
+
 </body>
 </html>
